@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/theater_maroon">
+
+    <!-- Title -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivMovieUpdate"
+                android:layout_width="412dp"
+                android:layout_height="220dp"
+                android:scaleType="fitXY"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+                android:id="@+id/etMovieURL"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/theater_white"
+                android:ems="10"
+                android:hint="@string/urlhint"
+                android:inputType="textPersonName"
+                android:paddingLeft="7dp"
+                android:textColor="@color/theater_maroon"
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/tvMovieID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/movie4"
+                android:text="@string/movieid"
+                android:textColor="@color/main_yellow"
+                android:textSize="9pt" />
+
+            <EditText
+                android:id="@+id/etMovieID"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/theater_white"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:paddingLeft="7dp"
+                android:textColor="@color/theater_maroon"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tvMovieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/movie4"
+                android:text="@string/movietitle"
+                android:textColor="@color/main_yellow"
+                android:textSize="9pt" />
+
+            <EditText
+                android:id="@+id/etEditMovieTitle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/theater_white"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="7dp"
+                android:textColor="@color/theater_maroon"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tvGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/movie4"
+                android:text="@string/genre"
+                android:textColor="@color/main_yellow"
+                android:textSize="9pt" />
+
+            <Spinner
+                android:id="@+id/spnEditGenre"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@color/theater_white"
+                android:entries="@array/genre"
+                android:spinnerMode="dialog"
+                android:textColor="@color/theater_maroon"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/movie4"
+                android:text="@string/Year"
+                android:textColor="@color/main_yellow"
+                android:textSize="9pt" />
+
+            <EditText
+                android:id="@+id/etEditYear"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/theater_white"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingLeft="7dp"
+                android:textColor="@color/theater_maroon"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tvAgeRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/movie4"
+                android:text="@string/agerating"
+                android:textColor="@color/main_yellow"
+                android:textSize="9pt" />
+
+            <Spinner
+                android:id="@+id/spnEditAgeRating"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@color/theater_white"
+                android:entries="@array/agerating"
+                android:spinnerMode="dialog"
+                android:textColor="@color/theater_maroon"
+                android:textSize="22dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/main_yellow"
+                    android:fontFamily="@font/movie"
+                    android:text="@string/Update"
+                    android:textColor="@color/theater_white"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/theater_red"
+                    android:fontFamily="@font/movie"
+                    android:text="@string/Delete"
+                    android:textColor="@color/theater_white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnReturn"
+                    android:layout_width="320dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/movie"
+                    android:text="@string/Return"
+                    android:textColor="@color/theater_white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

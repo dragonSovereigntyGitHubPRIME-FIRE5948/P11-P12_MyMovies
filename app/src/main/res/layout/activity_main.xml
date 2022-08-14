@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="900dp"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvViewMovies"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:text="@string/insertmovies"
+                android:textColor="@color/main_yellow"
+                android:background="@color/theater_maroon"
+                android:fontFamily="@font/movie3"
+                android:textSize="26pt"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- Movie Title -->
+            <TextView
+                android:id="@+id/tvMovieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/movie4"
+                android:textSize="13pt"
+                android:textColor="@color/theater_red"
+                android:text="@string/movietitle" />
+
+            <EditText
+                android:id="@+id/etMovieTitle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/theater_white"
+                android:textSize="22dp"
+                android:paddingLeft="7dp"
+                android:textColor="@color/theater_maroon"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <!-- Genre -->
+            <TextView
+                android:id="@+id/tvGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/movie4"
+                android:textSize="13pt"
+                android:textColor="@color/theater_red"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/genre" />
+
+            <Spinner
+                android:id="@+id/spnGenre"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/theater_white"
+                android:layout_marginBottom="10dp"
+                android:spinnerMode="dialog"
+                android:textSize="22dp"
+                android:textColor="@color/theater_maroon"
+                android:entries="@array/genre"/>
+
+            <!-- Year -->
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/movie4"
+                android:textSize="13pt"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/theater_red"
+                android:text="@string/Year" />
+
+            <EditText
+                android:id="@+id/etYear"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/theater_white"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingLeft="7dp"
+                android:textColor="@color/theater_maroon"
+                android:textSize="22dp" />
+
+            <!-- Age Rating -->
+            <TextView
+                android:id="@+id/tvAgeRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/movie4"
+                android:textSize="13pt"
+                android:textColor="@color/theater_red"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/agerating" />
+
+            <Spinner
+                android:id="@+id/spnAgeRating"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/theater_white"
+                android:layout_marginBottom="10dp"
+                android:spinnerMode="dialog"
+                android:textSize="22dp"
+                android:textColor="@color/theater_maroon"
+                android:entries="@array/agerating"/>
+
+            <!-- Image -->
+            <TextView
+                android:id="@+id/tvImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/movie4"
+                android:textSize="13pt"
+                android:textColor="@color/theater_red"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+
+                android:text="@string/urlImage" />
+
+            <EditText
+                android:id="@+id/etImageURL"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@color/theater_white"
+                android:textSize="22dp"
+                android:textColor="@color/theater_maroon"
+                android:ems="10"
+                android:paddingLeft="7dp"
+                android:inputType="textUri" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <!-- Cancel Button -->
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/main_yellow"
+                    android:fontFamily="@font/movie"
+                    android:text="@string/Cancel"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/theater_white"
+                    android:textSize="18dp" />
+
+                <!-- Insert Button -->
+                <Button
+                    android:id="@+id/btnInsert"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/theater_red"
+                    android:fontFamily="@font/movie"
+                    android:text="@string/Insert"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/theater_white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvShowMovies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clickhere"
+                android:textColor="@color/main_yellow"
+                android:textAlignment="center"
+                android:textSize="7pt"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/movie4" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

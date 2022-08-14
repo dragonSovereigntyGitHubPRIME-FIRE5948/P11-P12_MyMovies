@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">P12 MyMovies</string>
+
+    <string name="movietitle">Movie Title</string>
+    <string name="genre">Genre</string>
+    <string name="Year">Year</string>
+    <string name="insertmovies">Insert Movie</string>
+    <string name="agerating">Age Rating</string>
+    <string name="Insert">Insert</string>
+    <string name="show">Show</string>
+    <string name="showmovies">Show Movies</string>
+    <string name="Update">Update</string>
+    <string name="Delete">Delete</string>
+    <string name="Return">Return</string>
+    <string name="movieid">ID</string>
+    <string name="urlImage">Image URL</string>
+    <string name="clickhere">Click here to view movies</string>
+    <string name="urlhint">Enter URL to set image (jpg, png)</string>
+
+
+    <string name="Sort">Sort</string>
+    <string name="Cancel">Cancel</string>
+
+    <string name="viewmovies">View Movies</string>
+    <string name="viewsongpara">Click Show Songs button to view all songs in collection. \n Filter through title, singers, year released, ratings, or combination</string>
+
+    <string name="inserttext">1. Title and Singers cannot be blank, or multiple blank white-spaces\n2. Year must be at least 4 digits, more than Year 1000 to 2022\n3. Rating 0 (nil) to 5 stars</string>
+
+    <string-array name="genre">
+        <item></item>
+        <item>Action</item>
+        <item>Adventure</item>
+        <item>Comedy</item>
+        <item>Drama</item>
+        <item>Horror</item>
+        <item>Science-fiction</item>
+        <item>Thriller</item>
+        <item>Romance</item>
+    </string-array>
+
+    <string-array name="agerating">
+        <item></item>
+        <item>G</item>
+        <item>PG</item>
+        <item>P13</item>
+        <item>NC16</item>
+        <item>M18</item>
+        <item>R21</item>
+    </string-array>
+
+    <string-array name="Sort">
+        <item></item>
+        <item>Title ASCENDING</item>
+        <item>Title DESCENDING</item>
+        <item>Genre ASCENDING</item>
+        <item>Genre DESCENDING</item>
+        <item>Year ASCENDING</item>
+        <item>Year DESCENDING</item>
+        <item>Age Rating ASCENDING</item>
+        <item>Age Rating DESCENDING</item>
+    </string-array>
+
+</resources>
